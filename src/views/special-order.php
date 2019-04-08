@@ -11,22 +11,22 @@
 
                     <form method="POST" action="">
                         Name:
-                        <input type="text" name="customer_purchase_name"/></br>
+                        <input type="text" name="customer_special_order_name"/></br>
                         Telephone number:
-                        <input type="text" name="customer_purchase_phone"/></br>
+                        <input type="text" name="customer_special_order_phone"/></br>
                         <button type="submit" name="search_candidates" class="btn btn-success submit">Search</button>                            </form>
 
                     <?php
 
                     $customer_id = -1;
-                    if (isset($_POST['customer_purchase_name']) &&
-                        isset($_POST["customer_purchase_phone"])) {
+                    if (isset($_POST['customer_special_order_name']) &&
+                        isset($_POST["customer_special_order_phone"])) {
                         require_once('../database/Query.php');
                         $sql = "SELECT *, `c`.`id` as `customer_id`
                                             FROM `customers` as `c`
                                             INNER JOIN `contact_information` ON `c`.`contact_id` = `contact_information`.`id` 
-                                            WHERE `contact_information`.`name` LIKE \"" . $_POST['customer_purchase_name'] . "\"  
-                                            AND `contact_information`.`phone_number` LIKE \"" . $_POST["customer_purchase_phone"] . "\"";
+                                            WHERE `contact_information`.`name` LIKE \"" . $_POST['customer_special_order_name'] . "\"  
+                                            AND `contact_information`.`phone_number` LIKE \"" . $_POST["customer_special_order_phone"] . "\"";
                         $query = new Query();
                         $result = $query->execute($sql);
 

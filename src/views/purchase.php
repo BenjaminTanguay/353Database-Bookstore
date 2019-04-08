@@ -15,7 +15,8 @@
                                 <input type="text" name="customer_purchase_name"/></br>
                                 Telephone number:
                                 <input type="text" name="customer_purchase_phone"/></br>
-                                <button type="submit" name="search_candidates" class="btn btn-success submit">Search</button>                            </form>
+                                <button type="submit" name="search_candidates" class="btn btn-success submit">Search</button>
+                            </form>
 
                             <?php
 
