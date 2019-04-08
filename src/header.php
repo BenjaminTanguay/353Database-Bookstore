@@ -42,8 +42,7 @@
 
 <header>
     <div class="nav">
-        <a href="index.php" class="selected">Home</a>
-        <a href="book.php">Books</a>
+        <a href="index.php" class="selected">Books</a>
         <a href="books-to-receive.php">Books to receive</a>
         <a href="employee-sale.php">Employee sale</a>
         <a href="purchase.php">Purchases</a>
