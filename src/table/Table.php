@@ -16,7 +16,7 @@
 
             echo '</thead>';
 
-            if (count($rows) != 0 && count($rows[0] == count($tableHeaderArray))) {
+            if (count($rows) != 0 && count($rows[0]) == count($tableHeaderArray)) {
                 echo '<tbody>';
                 foreach($rows as $row) {
                     echo '<tr>';
