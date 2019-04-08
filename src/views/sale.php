@@ -47,7 +47,6 @@
                                             INNER JOIN `contact_information` ON `customers`.`contact_id` = `contact_information`.`id`
                                           ) as info;
                                         ";
-                        echo $saleQuery;
                         $table->printTable($tableHeaders, $saleQuery);
 
 
