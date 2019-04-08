@@ -6,7 +6,7 @@
             $query = new Query();
             $rows = $query->execute($sqlQueryToDisplay);
 
-            echo '<table class="table table-hover">';
+            echo '<table class="table table-hover table-bordered table-striped">';
             echo '<thead>';
             foreach($tableHeaderArray as $tableHeader) {
                 echo '<th>';

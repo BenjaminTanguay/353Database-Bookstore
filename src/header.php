@@ -42,7 +42,7 @@
 
 <header>
     <div class="nav">
-        <a href="views/index.php" class="selected">Home</a>
+        <a href="index.php" class="selected">Home</a>
         <a href="book.php">Books</a>
         <a href="purchase.php">Purchases</a>
         <a href="sale.php">Sales</a>
